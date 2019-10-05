@@ -60,8 +60,8 @@ app.use(function(req, res, next) {
 app.use('/', require('./routes/index.js'));
 // app.use('/users', require('./routes/users.js'));
 
-const PORT = process.env.PORT || 8000;
 
-app.listen(PORT, ()=>{
-  console.log('server listening at port', PORT)
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
